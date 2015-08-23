@@ -1,0 +1,253 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* base css */
+html,body{ width:100%; height:100%;}
+html{color:#000;font-size: 12px; font-family:"Microsoft Yahei"; background:#eaeaea;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,
+fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+a{text-decoration: none;outline: none;}
+li{ list-style:none;}
+.clr{clear:both; height:0; width:100%; font-size:1px; line-height:0px; visibility:hidden; overflow:hidden;}
+
+/* main css */
+body{
+    /*min-width: 1280px;*/
+}
+
+/* main css */
+.wrap{ height:auto; overflow:hidden;}
+.head{ height:30px; padding:5px 10px 0; background:#fff;}
+.headRight ul li{ float:left; padding: 3px 0; margin:2px 0; border-radius: 5px; padding: 2px 10px; display:inline; color:#000; font-size: 14px;}
+.headRight ul li:hover{ cursor: pointer;background: #9e9e9e;color: #fff;}
+.headRight ul li.hover{ cursor: pointer;background: #9e9e9e;color: #fff;}
+.headRight{ float:right;}
+.head ul li{
+    float: left;
+}
+.head ul li.logout{margin-left: 30px;}
+.headLeft{}
+.headLeft .info{ float:left; padding-left:20px; line-height:220%;}
+.headLeft .info span{ padding:0 5px;}
+.headLeft .info span.blue{ color:#3e80ff;}
+.headLeft .info span.red{ color:#eb0000;}
+.headLeft ul li{padding: 3px 0;}
+
+.wrap{
+    height: 100%;
+}
+.main{
+    /*height:auto;*/
+    /*overflow-y:scroll;*/
+    background: #bfbfbf;
+    width: 100%;
+    /*width: 940px;*/
+    height: 100%;
+    /*min-height: 800px;*/
+    margin: 0 auto;
+    position: relative;
+}
+
+.left{
+    position: absolute;
+    left: 20px;
+    /*float: left;*/
+    /*width: 760px;*/
+    width:75%;
+    height: 100%;
+}
+.right{
+    /*float: right;*/
+    width: 180px;
+    right: 10px;
+    position: absolute;
+    /*width: 20%;*/
+    height: 100%;
+    /*min-height: 800px;*/
+}
+.left .title{
+    font-size: 38px;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+    margin-top: 35px;
+    color: #5e5e5e;
+}
+.left .title div{
+    text-align: center;
+}
+.title .titleLeft{
+    /*width: 300px;*/
+    /*float: left;*/
+    margin: 0 auto;
+}
+.title .titleLeft .fieldName{
+    color: #5f7eaa;
+}
+.title .titleRight{
+    /*width: 470px;*/
+    /*float: right;*/
+    margin: 0 auto;
+}
+.left .colorBtn{
+    float: right;
+}
+.left .colorBtn div{
+    border-radius: 4px;
+    float: left;
+    color:#fff;
+    padding: 2px 10px;
+    display:inline;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    margin: 0 5px 0 5px;
+}
+.left .colorBtn .risk{
+    background-color:#f20000;
+}
+.left .colorBtn .risk.clicked{
+    color:#000;
+}
+.left .colorBtn .rush{
+    background-color:#fca30a;
+}
+.left .colorBtn .rush.clicked{
+    color:#000;
+}
+.left .colorBtn .stable{
+    background-color:#33e845;
+}
+.left .colorBtn .stable.clicked{
+    color:#000;
+}
+.left .colorBtn .insure{
+    background-color:#00e1e2;
+}
+.left .colorBtn .insure.clicked{
+    color:#000;
+}
+
+.colorBtn div a:hover{
+    cursor: pointer;
+}
+
+.left .table {
+    /*border-radius: 5px;*/
+    /*border: 2px solid #dbdbdb;*/
+    max-height: 500px;
+    /*overflow-y: scroll ;*/
+}
+.right{
+    /*position: relative;*/
+}
+
+.right .selectedSchool{
+    /*float: right;*/
+    width:100%;
+    position: absolute;
+    bottom:150px;
+    right: 20px;
+    background: #fff;
+    border: 1px #e4e3e3 solid;
+    border-radius: 5px;
+    -moz-box-shadow:2px 2px 10px 0  #b7b5b5;
+    -webkit-box-shadow:2px 2px 10px 0 #b7b5b5;
+    box-shadow:2px 2px 10px 0 #b7b5b5;
+    min-width: 180px;
+}
+
+.right .selectedSchool .title{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.selectedSchool .title .detailBtn{
+    float: right;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    background-color: #e4e3e3;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 0 5px;
+    /*display:inline;*/
+    color:#5d5d5d;
+}
+.selectedList .school{
+    width:100%;
+    margin: 5px 0 5px 0;
+}
+.selectedList .school .schoolName{
+    float: left;
+    width: 80%;
+}
+.selectedList .school .remove{
+    float: right;
+    width:16px;
+    height:16px;
+    margin-right: 5px;
+}
+.remove a:hover{
+    cursor: pointer;
+}
+.remove img{
+    width:100%;
+    height:100%;
+}
+.selectedSchool .detailBtn a:hover{
+    cursor: pointer;
+}
+.left .table table{
+    color: #5e5e5e;
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid #dbdbdb;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn{
+    background: #3a76eb;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.left .btn{
+    width: 210px;
+    font-size: 18px;
+    letter-spacing: 5px;
+    font-family: "微软雅黑";
+    padding: 10px 5px;
+    position: absolute;
+    bottom:60px;
+}
+table img:hover{
+    cursor: pointer;
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+.headrow2{
+    font-size: 14px;
+}
+
+td.lefttd{
+    border-right: 2px solid #b1b1b1;
+}
+
+.right .btn{
+    position: absolute;
+    top: 45px;
+    padding: 5px 5px;
+    font-size: 16px;
+    font-family: "微软雅黑";
+}
+
+.confirm2:hover{
+    cursor: pointer;
+}
+.cancel:hover{
+    cursor: pointer;
+}

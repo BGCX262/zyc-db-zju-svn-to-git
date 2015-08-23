@@ -1,0 +1,40 @@
+@charset "utf-8";
+/*
+* JCMS CSS Library 1.0.0
+* Copyright(c) 2012-05-02, JCMS CSS
+* @email 493430993@qq.com
+* @Auther Sword.tl
+* @url localhost
+*/
+/********窗口********/
+
+/*body{overflow:auto\0/;} *//*For ie 8 only*/
+/**body{overflow:auto;-webkit-user-select: none;-moz-user-select:none;}*/
+
+/********标准三列布局Start********/
+/*
+      #leftSide{width:20%;height:100%;float:left;background:#36C;margin:0px;_margin-right:-3px;}
+      #mainSide{background-color:#FF0000;height:100%;}
+      #rightSide{width:20%;height:100%;float:right;background:#00F;margin:0px;_margin-left:-3px;}
+    * _margin-right和_margin-left解决ie6产生3px问题/
+/********标准三列布局End********/
+
+/* head css */
+.head {
+        height: 100px;
+}
+
+/********左边框********/
+#leftSide {
+
+}
+
+/********右边框********/
+#rightSide {
+
+}
+
+/* main css */
+#mainSide {
+
+}

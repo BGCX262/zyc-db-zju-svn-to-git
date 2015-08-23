@@ -1,0 +1,128 @@
+{
+    "success":true,
+    "list":[
+        {
+            "schoolname": "人大",
+            "fieldname":"计算机科学技术",
+            "year":[
+                {
+                    "year":200001,
+                    "renshu":212,
+                    "max":11,
+                    "min": 12,
+                    "average":22,
+                    "maxRank":22,
+                    "minRank":22,
+                    "averageRank":22,
+                    "schoolname":"安大"
+                },
+                {
+                    "year":2009,
+                    "renshu":212,
+                    "max":11,
+                    "min": 12,
+                    "average":22,
+                    "maxRank":22,
+                    "minRank":22,
+                    "averageRank":22,
+                    "schoolname":"安大"
+                },
+                {
+                    "year":2009,
+                    "renshu":212,
+                    "max":11,
+                    "min": 12,
+                    "average":22,
+                    "maxRank":22,
+                    "minRank":22,
+                    "averageRank":22,
+                    "schoolname":"安大"
+                },
+                {
+                    "year":2009,
+                    "renshu":212,
+                    "max":11,
+                    "min": 12,
+                    "average":22,
+                    "maxRank":22,
+                    "minRank":22,
+                    "averageRank":22,
+                    "schoolname":"安大"
+                },
+                {
+                    "year":2009,
+                    "renshu":212,
+                    "max":11,
+                    "min": 12,
+                    "average":22,
+                    "maxRank":22,
+                    "minRank":22,
+                    "averageRank":22,
+                    "schoolname":"安大"
+                }
+            ]
+        },
+        {
+            "schoolname": "哒哒哒大",
+            "fieldname":"信76687息计算",
+            "year":[
+                {
+                    "year":200001,
+                    "renshu":212,
+                    "max":11,
+                    "min": 12,
+                    "average":22,
+                    "maxRank":22,
+                    "minRank":22,
+                    "averageRank":22,
+                    "schoolname":"安大"
+                },
+                {
+                    "year":2009,
+                    "renshu":212,
+                    "max":11,
+                    "min": 12,
+                    "average":22,
+                    "maxRank":22,
+                    "minRank":22,
+                    "averageRank":22,
+                    "schoolname":"安大"
+                },
+                {
+                    "year":2009,
+                    "renshu":212,
+                    "max":11,
+                    "min": 12,
+                    "average":22,
+                    "maxRank":22,
+                    "minRank":22,
+                    "averageRank":22,
+                    "schoolname":"安大"
+                },
+                {
+                    "year":2009,
+                    "renshu":212,
+                    "max":11,
+                    "min": 12,
+                    "average":22,
+                    "maxRank":22,
+                    "minRank":22,
+                    "averageRank":22,
+                    "schoolname":"安大"
+                },
+                {
+                    "year":2009,
+                    "renshu":212,
+                    "max":11,
+                    "min": 12,
+                    "average":22,
+                    "maxRank":22,
+                    "minRank":22,
+                    "averageRank":22,
+                    "schoolname":"安大"
+                }
+            ]
+        }
+    ],
+   "total":1000
+}

@@ -1,0 +1,309 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>查询专业信息</title>
+    <link type="text/css" href="css/fieldsofallschool.css" rel="stylesheet">
+    <link type="text/css" href="resources/css/jquery.loadmask.css" rel="stylesheet">
+
+    <script type="text/javascript" src="js/lib/host.js"></script>
+    <script type="text/javascript" src="js/lib/jquery/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery/json.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery/jquery.loadmask.js"></script>
+
+    <script type="text/javascript" src="js/lib/jquery/jquery.alerts.js"></script>
+    <link type="text/css" href="resources/css/jquery.alerts.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="js/lib/fg.menu.js"></script>
+    <link type="text/css" href="css/fg.menu.css" media="screen" rel="stylesheet" />
+    <link type="text/css" href="resources/theme/ui.all.css" media="screen" rel="stylesheet" />
+    <link type="text/css" href="css/menu.css" media="screen" rel="stylesheet" />
+
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/fieldsofallschool.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="head">
+        <div class="headRight">
+            <ul>
+                <li><a class="step1">选择意向院校</a></li>
+                <li> | </li>
+                <li><a class="step2">精选院校专业</a></li>
+                <li> | </li>
+                <li><a class="step3">方案调整</a></li>
+                <li class="logout">退出登录</li>
+            </ul>
+        </div>
+        <div class="headLeft">
+            <ul>
+                <li>
+                    <a class="fg-button fg-button-icon-right" id="menu">
+                        <span class="ui-icon ui-icon-triangle-1-s"></span>菜单</a>
+                </li>
+                <li>
+                    <a class="fg-button fg-button-icon-right" id="lookupSchool">
+                        <span class="ui-icon ui-icon-triangle-1-s"></span>查看数据</a>
+                </li>
+            </ul>
+            <div class="info">
+                <span class="kemu"></span>
+                <span class="blue studentname" ></span>
+                总分  <span class="blue totalscore"></span>
+                名次  <span class="red mingci"></span>
+            </div>
+        </div>
+        <div class="hide" id="menu-items" style="display: none;">
+            <ul>
+                <li><a href="#" class="savePlan step1">保存当前方案</a></li>
+                <li><a href="#">载入已存在方案</a>
+                    <ul class="savedPlansList">
+                    </ul>
+                </li>
+                <li><a href="#">专家方案设计</a></li>
+                <li><a href="#">使用帮助</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="hide" id="lookupSchool_items" style="display: none;">
+            <ul>
+                <li><a href="#" class="searchSchoolInfo">查询指定院校录取数据</a></li>
+                <li><a href="#">查询指定专业录取数据</a>
+                    <ul>
+                        <li><a href="#" class="searchFieldOfOneSchool">查询单个院校该专业</a></li>
+                        <li><a href="#" class="searchFieldOfAllSchool">查询全部院校该专业</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+  <div class="main">
+        <div class="left">
+            <div class="title">
+                <div class="titleLeft">
+                    <span class="fieldName"></span>
+                    专业
+                </div>
+                <div class="titleRight">
+                    全国院校录取情况表
+                </div>
+            </div>
+            <div class="colorBtn">
+                <div class="risk clicked"><a>忌</a></div>
+                <div class="rush"><a>冲</a></div>
+                <div class="stable"><a>稳</a></div>
+                <!--<div class="insure"><a>保</a></div>-->
+            </div>
+            <div class="clr"></div>
+            <div class="table">
+                <table cellpadding="0" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <td rowspan="2" colspan="2" width="130px" class="lefttd"></td>
+                            <td colspan="2" class="lefttd year">2009</td>
+                            <td colspan="2" class="lefttd year">2010</td>
+                            <td colspan="2" class="lefttd year">2011</td>
+                            <td colspan="2" class="lefttd year">2012</td>
+                            <td class="year">2013</td>
+                        </tr>
+                        <tr>
+                            <td class="headrow2 lefttd">招生人数</td>
+                            <td class="headrow2 lefttd">最低投档名次</td>
+                            <td class="headrow2 lefttd">招生人数</td>
+                            <td class="headrow2 lefttd">最低投档名次</td>
+                            <td class="headrow2 lefttd">招生人数</td>
+                            <td class="headrow2 lefttd">最低投档名次</td>
+                            <td class="headrow2 lefttd">招生人数</td>
+                            <td class="headrow2 lefttd">最低投档名次</td>
+                            <td class="headrow2 lefttd">招生人数</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!--<td class="lefttd">南开大学</td>-->
+                            <!--<td class="lefttd">0</td>-->
+                            <!--<td class="lefttd">0</td>-->
+                            <!--<td class="lefttd">0</td>-->
+                            <!--<td class="lefttd">0</td>-->
+                            <!--<td class="lefttd">0</td>-->
+                            <!--<td class="lefttd">0</td>-->
+                            <!--<td class="lefttd">0</td>-->
+                            <!--<td class="lefttd">0</td>-->
+                            <!--<td class="lefttd">0</td>-->
+                            <!--<td><a><img src="images/addimg.jpg"></a></td>-->
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btn" id="return"><a>返回到选择意向学校</a></div>
+            </div>
+            <!--<div class="clr"></div>-->
+        </div>
+        <div class="clr"></div>
+        <div class="right">
+            <div class="btn" id="lookupForOtherFields"><a>查看其他专业</a></div>
+            <div class="selectedSchool">
+                <div class="title">
+                    <span style=" color:#3e80ff;font-size: 16px;" id="selectedNum">已选0所</span>
+                    <div class="detailBtn"><a>查看详细数据</a></div>
+                </div>
+                <div class="clr"></div>
+                <div class="selectedList">
+
+                </div>
+            </div>
+        </div>
+  </div>
+    <div class="clr"></div>
+</div>
+<div class="clr"></div>
+
+
+<div class="searchSchoolForm">
+    <label for="inputSchool">请输入院校名称：</label>
+    <input type="text" style="width:200px;" id=inputSchool name="inputSchool" value="" /><br />
+    <div class="button">
+        <div class="confirm">确定</div>
+        <div class="cancel">取消</div>
+    </div>
+</div>
+<div class="searchFieldForm">
+    <label for="inputSchool2" class="inputSchool2">请输入院校名称：</label>
+    <input type="text" style="width:200px;margin-top: 10px;"class="inputSchool2" id=inputSchool2 name="inputSchool" value="" /><br />
+    <label for="inputField">请输入专业名称：</label>
+    <input type="text" style="width:200px;" id=inputField name="inputField" value="" /><br />
+    <div class="button">
+        <div class="confirm">确定</div>
+        <div class="cancel">取消</div>
+    </div>
+</div>
+<div class="searchSchoolResultTable">
+    <table cellpadding="0" cellspacing="0">
+        <thead>
+        <tr>
+            <th rowspan=2 width="100px;" style="font-size: 20px;" class="head1">院校名称</th>
+            <th colspan=4>2012浙江省理科第一批分数线593分</th>
+            <th colspan=4>2012浙江省理科第一批分数线593分</th>
+            <th colspan=4>2012浙江省理科第一批分数线593分</th>
+            <th colspan=4>2012浙江省理科第一批分数线593分</th>
+            <th rowspan=2>2013年招生人数</th>
+            <th rowspan=2 width=100 >院校地址</th>
+        </tr>
+        <tr>
+            <th>投档线分</th>
+            <th>名次号</th>
+            <th>超省线分</th>
+            <th>招生人数</th>
+            <th>投档线分</th>
+            <th>名次号</th>
+            <th>超省线分</th>
+            <th>招生人数</th>
+            <th>投档线分</th>
+            <th>名次号</th>
+            <th>超省线分</th>
+            <th>招生人数</th>
+            <th>投档线分</th>
+            <th>名次号</th>
+            <th>超省线分</th>
+            <th>招生人数</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!--<tr>-->
+        <!--<td>浙江大学</td>-->
+        <!--<td>0</td>-->
+        <!--<td>0</td>-->
+        <!--<td>0</td>-->
+        <!--<td>0</td>-->
+        <!--<td>0</td>-->
+        <!--<td>0</td>-->
+        <!--<td>0</td>-->
+        <!--<td>0</td>-->
+        <!--<td>0</td>-->
+        <!--<td>0</td>-->
+        <!--<td>0</td>-->
+        <!--<td>0</td>-->
+        <!--<td>0</td>-->
+        <!--<td>0</td>-->
+        <!--<td>0</td>-->
+        <!--<td>0</td>-->
+        <!--<td>0</td>-->
+        <!--<td>0</td>-->
+        <!--</tr>-->
+        </tbody>
+    </table>
+</div>
+<div class="searchFieldOfSchoolResultTable">
+    <table cellpadding="0" cellspacing="0">
+        <thead>
+        <tr>
+            <th>院校名称</th>
+            <th>专业名称</th>
+            <th>年份</th>
+            <th>招生人数</th>
+            <th>最高分</th>
+            <th>最高名次</th>
+            <th>最低分</th>
+            <th>最低名次</th>
+            <th>平均分</th>
+            <th>平均名次</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <!--<td rowspan=4>上海交通大学</td>-->
+            <!--<td rowspan=4>法学</td>-->
+            <!--<td>2009</td>-->
+            <!--<td>3</td>-->
+            <!--<td>657</td>-->
+            <!--<td>559</td>-->
+            <!--<td>654</td>-->
+            <!--<td>679</td>-->
+            <!--<td>655</td>-->
+            <!--<td>635</td>-->
+        </tr>
+        <tr>
+            <!--<td>2010</td>-->
+            <!--<td>3</td>-->
+            <!--<td>657</td>-->
+            <!--<td>559</td>-->
+            <!--<td>654</td>-->
+            <!--<td>679</td>-->
+            <!--<td>655</td>-->
+            <!--<td>635</td>-->
+        </tr>
+        <tr>
+            <!--<td>2011</td>-->
+            <!--<td>3</td>-->
+            <!--<td>657</td>-->
+            <!--<td>559</td>-->
+            <!--<td>654</td>-->
+            <!--<td>679</td>-->
+            <!--<td>655</td>-->
+            <!--<td>635</td>-->
+        </tr>
+        <tr>
+            <!--<td>2012</td>-->
+            <!--<td>3</td>-->
+            <!--<td>657</td>-->
+            <!--<td>559</td>-->
+            <!--<td>654</td>-->
+            <!--<td>679</td>-->
+            <!--<td>655</td>-->
+            <!--<td>635</td>-->
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="savePlanWin" style="display: none;">
+    <label for="inputPlanName">请输入保存的方案名称：</label>
+    <input type="text" style="width:200px;" id=inputPlanName name="inputPlanName" value="" /><br />
+    <div class="button">
+        <div class="confirm">确定</div>
+        <div class="cancel">取消</div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+{
+    "list":[
+
+        {
+            "schoolname": "高赛尔",
+            "minrank":-35,
+            "maxrank":66,
+             "professionlist": [
+                 {
+                     "name": "的粉红色",
+                     "type":3,
+                     "minrank":-35,
+                     "maxrank":66
+                 },
+                 {
+                     "name": "豆腐干",
+                     "type":3,
+                     "minrank":21,
+                     "maxrank":35
+                 },
+                 {
+                     "name": "三等功",
+                     "type":3,
+                     "minrank":-3,
+                     "maxrank":46
+                 },
+                 {
+                     "name": "法国警方根据",
+                     "type":3,
+                     "minrank":-21,
+                     "maxrank":99
+                 },
+                 {
+                     "name": "多个",
+                     "type":3,
+                     "minrank":-32,
+                     "maxrank":55
+                 }
+            ]
+        },
+        {
+            "schoolname": "围绕瓦特",
+            "minrank":-35,
+            "maxrank":66,
+            "professionlist": [
+                {
+                    "name": "更何况公开",
+                    "type":3,
+                    "minrank":-35,
+                    "maxrank":66
+                }
+            ]
+        },
+        {
+            "schoolname": "抑郁",
+            "minrank":-35,
+            "maxrank":66,
+            "professionlist": [
+                {
+                    "name": "废钢价格",
+                    "type":3,
+                    "minrank":-35,
+                    "maxrank":66
+                }
+            ]
+        },
+        {
+            "schoolname": "算法",
+            "minrank":-35,
+            "maxrank":66,
+            "professionlist": [
+                {
+                    "name": "阿萨德撒",
+                    "type":3,
+                    "minrank":-35,
+                    "maxrank":66
+                }
+            ]
+        },
+        {
+            "schoolname": "特特",
+            "minrank":-35,
+            "maxrank":66,
+            "professionlist": [
+                {
+                    "name": "豆腐干地方",
+                    "type":3,
+                    "minrank":-35,
+                    "maxrank":66
+                }
+            ]
+        }
+    ]
+}

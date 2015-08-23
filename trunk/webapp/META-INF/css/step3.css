@@ -1,0 +1,339 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* base css */
+html,body{ width:100%; height:100%;}
+html{color:#000;font-size: 12px; font-family:"Microsoft Yahei";}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,
+fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+a{text-decoration: none;outline: none;}
+li{ list-style:none;}
+.clr{clear:both; height:0; width:100%; font-size:1px; line-height:0px; visibility:hidden; overflow:hidden;}
+
+
+/* main css */
+.wrap{ height:auto;}
+.head{ height:30px; padding:5px 10px 0; background:#fff;}
+.headRight ul li{ float:left; padding: 3px 0; margin:2px 0; border-radius: 5px; padding: 2px 10px; display:inline; color:#000; font-size: 14px;}
+.headRight ul li:hover{ cursor: pointer;background: #9e9e9e;color: #fff;}
+.headRight ul li.hover{ cursor: pointer;background: #9e9e9e;color: #fff;}
+.headRight{ float:right;}
+.head ul li{
+    float: left;
+}
+.head ul li.logout{margin-left: 30px;}
+.headLeft{}
+.headLeft .info{ float:left; padding-left:20px; line-height:220%;}
+.headLeft .info span{ padding:0 5px;}
+.headLeft .info span.blue{ color:#3e80ff;}
+.headLeft .info span.red{ color:#eb0000;}
+.headLeft ul li{padding: 3px 0;}
+
+body{
+    min-width: 1020px;
+}
+.main{
+    height:auto;
+    /*overflow:hidden;*/
+    padding-top: 50px;
+    width: 100%;
+    /*min-width: 1020px;*/
+    background: url(../images/mainTopbg.jpg) top repeat-x #fff;
+}
+.mainTop{
+    /*text-align: center;*/
+    margin-top: 15px;
+    width:100%;
+
+    height:auto;
+    /*overflow: hidden;*/
+}
+.mainTop .schoolList{
+    /*width:90%;*/
+    /*width: 918px;*/
+    /*min-width: 918px;*/
+    margin: 0 auto;
+
+    height:auto;
+    overflow:hidden;
+    padding: 10px 0;
+}
+.mainTop .schoolList .school{
+    width: 200px;
+    /*width: 16%;*/
+    float: left;
+    margin: 0 5px;
+    padding-left: 10px;
+    padding-top:10px;
+    border: 1px #e4e3e3 solid;
+    border-radius: 5px;
+    -moz-box-shadow:2px 2px 10px #b7b5b5;
+    -webkit-box-shadow:2px 2px 10px #b7b5b5;
+    box-shadow:2px 2px 10px #b7b5b5;
+}
+.mainTop .schoolList .school .schoolTitle .rank{
+    width:18px;
+    height:18px;
+    border: 2px #000 solid;
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+.school .rank{
+    width:14px;
+    height:14px;
+    border: 1px #000 solid;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+}
+.mainTop .schoolList .school .schoolTitle span{
+    float: right;
+    border-radius: 5px;
+    background: url(../images/bg2.jpg) repeat;
+    padding: 3px 5px;
+    margin-right: 5px;
+    font-size: 15px;
+    color:#fff;
+    width:75%;
+    text-align: center;
+}
+/*.mainTop .schoolList .school .fields .field .updown{*/
+    /*float: left;*/
+/*}*/
+.mainTop .schoolList .school .fields .field span{
+    float: left;
+}
+.mainTop .schoolList .school .fields .field .colorBtn{
+    float: left;
+    color:#fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+.mainTop .schoolList .school .fields .field .colorBtn.risk{
+    background-color:#f20000;
+    margin: 0 5px;
+    padding: 0 5px;
+}
+.mainTop .schoolList .school .fields .field .colorBtn.rush{
+    background-color:#fca30a;
+    margin: 0 5px;
+    padding: 0 5px;
+}
+.mainTop .schoolList .school .fields .field .colorBtn.insure{
+    background-color:#00e1e2;
+    margin: 0 5px;
+    padding: 0 5px;
+}
+.mainTop .schoolList .school .fields .field .colorBtn.stable{
+    background-color:#33e845;
+    margin: 0 5px;
+    padding: 0 5px;
+}
+.mainTop .schoolList .school  .schoolTitle.hover{
+    cursor: move;
+}
+.mainTop .schoolList .school .fields .field.hover{
+    cursor: move;
+}
+
+.mainTop .schoolList .school .schoolTitle{
+
+}
+.mainTop .schoolList .school .fields{
+    margin:5px 0 10px 0;
+}
+.mainTop .schoolList .school .fields .field{
+    margin: 5px 0 5px 0;
+    font-size: 14px;
+    color: #000;
+    float: left;
+    width: 100%;
+}
+
+.mainBottom{
+    width:100%;
+    /*height: 50%;*/
+    height: 80%;
+    min-width: 1020px;
+    /*height: auto;*/
+    /*overflow: hidden;*/
+    /*height: 350px;*/
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.mainBottom .bottomList{
+    width: 93%;
+    height:100%;
+    min-width: 948px;
+    /*max-width: 1020px;*/
+    margin: 0 auto;
+    /*border: 1px #f20000 solid;*/
+}
+.mainBottom .bottomList .chartList{
+    height:100%;
+    width: 72%;
+    /*width: 660px;*/
+    /*width: 66%;*/
+    margin-right: 5px;
+    float: left;
+    /*border: 1px #f20000 solid;*/
+}
+.mainBottom .bottomList .chartList .leftChart{
+    height:100%;
+    /*margin: 0 5px;*/
+    /*border: 1px #f20000 solid;*/
+    float: left;
+    width:47%;
+}
+.mainBottom .bottomList .chartList .title{
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 15px;
+}
+.mainBottom .bottomList .chartList .rightChart{
+     height:100%;
+     /*margin: 0 5px 0 0;*/
+     /*border: 1px #f20000 solid;*/
+     float: right;
+     width:47%;
+ }
+.mainBottom .bottomList .chartList .rightChart .titleField{
+    text-align: center;
+    font-size: 16px;
+}
+.mainBottom .bottomList .mainBtn{
+    /*margin-right: 1px;*/
+    /*margin-left:15px;*/
+    /*border: 1px #f20000 solid;*/
+    /*float: left;*/
+    height: 100%;
+    /*width:30%;*/
+    width:25%;
+    /*width:255px;*/
+}
+.mainBottom .bottomList .mainBtn{
+    float: left;
+    /*margin-left: 37px;*/
+}
+.mainBottom .bottomList .mainBtn .confirmInfo{
+    margin: 50px auto;
+    height: auto;
+    width: 100%;
+    overflow: hidden;;
+    /*margin:20px 0 120px 0;*/
+ }
+.mainBottom .bottomList .mainBtn .confirmInfo .checkbox{
+    float:left;
+    width:26px;
+    height:26px;
+    margin-right:5px;
+}
+.mainBottom .bottomList .mainBtn .confirmInfo .checkbox img{
+    width:100%;
+    height:100%;
+}
+.mainBottom .bottomList .mainBtn .confirmInfo .checkInfo{
+    float:left;
+    font-size:20px;
+}
+.tipInfo{
+    width: 100%;
+    height: 150px;
+    border: 2px #000 solid;
+    margin: 0 auto;
+}
+.tipInfo textarea{
+    width: 100%;
+    height:80%;
+    border: none;
+    margin: 30px 0 0 0;
+    font-size: 16px;
+}
+
+.mainBottom .bottomList .mainBtn .stepBtn{
+    /*margin-top:100px;*/
+    /*float:left;*/
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+
+.mainBottom .bottomList .mainBtn .stepBtn .previousBtn{
+    float: left;
+    background: url(../images/bg2.jpg) repeat;
+    border-radius: 8px;
+    padding: 5px 10px;
+    /*display:inline;*/
+    color:#fff;
+    font-size: 24px;
+    width: 90px;
+}
+.mainBottom .bottomList .mainBtn .stepBtn .nextBtn{
+    float: left;
+    background-color: #838383;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    /*display:inline;*/
+    color:#fff;
+    font-size: 24px;
+    width: 90px;
+}
+.nextBtn.enable{
+    background: url(../images/bg2.jpg) repeat;
+}
+
+.stepBtn .nextBtn.hover,.stepBtn .previousBtn.hover,.changeField,.changeSchool{
+    cursor: pointer;
+}
+
+.leftChart .changeSchool{
+    float: right;
+    background: url(../images/bg2.jpg) repeat;
+    border-radius: 8px;
+    padding: 5px 5px;
+    margin: 16px 10px 0 0;
+    /*display:inline;*/
+    color:#fff;
+    font-size: 16px;
+    width: 72px;
+}
+.rightChart .changeField{
+    float: right;
+    background: url(../images/bg2.jpg) repeat;
+    border-radius: 8px;
+    padding: 5px 5px;
+    margin: 0 10px 0 0;
+    /*display:inline;*/
+    color:#fff;
+    font-size: 16px;
+    width: 72px;
+    /*margin: -24px 10px 0 0;*/
+}
+
+.colorDesc div,.colorDesc span{
+    float: left;
+}
+.colorDesc{
+    float: left;
+    margin: 20px 0 0 40px;
+}
+.colorDesc .rankColor, .colorDesc .renshuColor{
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+.colorDesc .rankColor{
+    background: #4f81bc;
+}
+
+.colorDesc .renshuColor{
+    background: #c0504e;
+    margin-left: 10px;
+}

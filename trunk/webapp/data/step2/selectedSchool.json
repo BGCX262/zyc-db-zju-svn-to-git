@@ -1,0 +1,63 @@
+
+    [
+        {
+            "schoolname": "睡会觉",
+            "city": "北京",
+            "rank": "111111",
+            "professionlist":[
+                {
+                    "name": "三国的时光",
+                    "type":1
+                },{
+                    "name":"送给对手",
+                    "type":2
+                }
+            ]
+        },
+        {
+            "schoolname": "浙江工业大学浙江工业大学",
+            "city": "北京",
+            "rank": "111111",
+            "professionlist":[
+                {
+                    "name": "三国的时光",
+                    "type":1
+                },{
+                    "name":"送给对手",
+                    "type":2
+                }
+            ]
+        },
+        {
+            "schoolname": "丹甫股份",
+            "city": "北京",
+            "rank": "111111",
+            "professionlist":[]
+        },
+        {
+            "schoolname": "如若图",
+            "city": "北京",
+            "rank": "111111",
+            "professionlist":[]
+        },
+        {
+            "schoolname": "讨厌讨厌",
+            "city": "北京",
+            "rank": "111111",
+            "professionlist":[]
+        },
+        {
+            "schoolname": "我特台湾",
+            "city": "北京",
+            "rank": "111111",
+            "professionlist":[
+                {
+                    "name": "三国的时光",
+                    "type":1
+                },{
+                    "name":"送给对手",
+                    "type":2
+                }
+            ]
+        }
+    ]

@@ -1,0 +1,54 @@
+{
+    "success":true,
+    "list":[
+        {
+            "schoolName": "人大",
+            "professionName":"大人",
+            "year":200001,
+            "renshu":212,
+            "max":11,
+            "min": 12,
+            "average":22,
+            "maxRank":22,
+            "minRank":22,
+            "averageRank":22
+        },
+        {
+            "schoolName": "人大",
+            "professionName":"大人",
+            "year":200001,
+            "renshu":212,
+            "max":11,
+            "min": 12,
+            "average":22,
+            "maxRank":22,
+            "minRank":22,
+            "averageRank":22
+        },
+        {
+            "schoolName": "人大",
+            "professionName":"大人",
+            "year":200001,
+            "renshu":212,
+            "max":11,
+            "min": 12,
+            "average":22,
+            "maxRank":22,
+            "minRank":22,
+            "averageRank":22
+        },
+        {
+            "schoolName": "人大",
+            "professionName":"大人",
+            "year":200001,
+            "renshu":212,
+            "max":11,
+            "min": 12,
+            "average":22,
+            "maxRank":22,
+            "minRank":22,
+            "averageRank":22
+        }
+    ],
+   "total":1000
+}

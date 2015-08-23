@@ -1,0 +1,304 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=8;IE=7;IE=6"/>
+    <title>考生信息登录</title>
+    <link type="text/css" href="css/main.css" rel="stylesheet">
+    <link type="text/css" href="resources/css/jquery.loadmask.css" rel="stylesheet">
+
+    <script type="text/javascript" src="js/lib/host.js"></script>
+    <script type="text/javascript" src="js/lib/jquery/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery/json.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery/jquery.loadmask.js"></script>
+
+    <script type="text/javascript" src="js/lib/jquery/jquery.alerts.js"></script>
+    <link type="text/css" href="resources/css/jquery.alerts.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="js/lib/fg.menu.js"></script>
+    <link type="text/css" href="css/fg.menu.css" media="screen" rel="stylesheet" />
+    <link type="text/css" href="resources/theme/ui.all.css" media="screen" rel="stylesheet" />
+    <link type="text/css" href="css/menu.css" media="screen" rel="stylesheet" />
+
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+  <div class="head">
+    <div class="headRight">
+      <ul>
+        <li>选择意向院校</li>
+          <li> | </li>
+        <li>精选院校专业</li>
+          <li> | </li>
+        <li>方案调整</li>
+        <li class="logout hover">退出登录</li>
+      </ul>
+    </div>
+    <div class="headLeft">
+      <ul>
+          <li>
+              <a class="fg-button fg-button-icon-right" id="menu">
+                  <span class="ui-icon ui-icon-triangle-1-s"></span>
+                  菜单
+              </a>
+          </li>
+          <li>
+              <a class="fg-button fg-button-icon-right" id="lookupSchool">
+                  <span class="ui-icon ui-icon-triangle-1-s"></span>
+                  查看数据
+              </a>
+          </li>
+      </ul>
+    </div>
+    <div class="hide" id="menu-items" style="display: none;">
+        <ul>
+            <li><a href="#">保存当前方案</a></li>
+            <li><a href="#">载入已存在方案</a>
+                <ul>
+                    <li><a href="#">方案一</a></li>
+                    <li><a href="#">方案一</a></li>
+                    <li><a href="#">方案一</a></li>
+                </ul>
+            </li>
+            <li><a href="#">专家方案设计</a></li>
+            <li><a href="#">使用帮助</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="hide" id="lookupSchool_items" style="display: none;">
+       <ul>
+          <li><a href="#" class="searchSchoolInfo">查询指定院校录取数据</a></li>
+          <li><a href="#">查询指定专业录取数据</a>
+              <ul>
+                  <li><a href="#" class="searchFieldOfOneSchool">查询单个院校该专业</a></li>
+                  <li><a href="#" class="searchFieldOfAllSchool">查询全部院校该专业</a></li>
+              </ul>
+          </li>
+      </ul>
+    </div>
+  </div>
+  <div class="clr"></div>
+  <div class="main">
+
+      <div class="left">
+            <div class="title">
+                <span>考生信息栏</span>
+            </div>
+            <div class="form">
+                <form>
+                    <fieldset class="topform" >
+                        <label for="user">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</label>
+                        <input type="text"  style="width:96px;" id=user name="user" value="" />
+
+                        <input type="radio" style="margin: 0 0 0 10px;" id= male name="sex" value="male"/>
+                        <label for="male">男</label>
+                        <input type="radio" style="margin: 0 0 0 10px;" name="sex" id= female value="female"/>
+                        <label for="female">女</label><br />
+
+                        <label for="subject">科&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目</label>
+                        <select id="subject" name="kemu">
+                            <option selected style="color: #dadada;">---请选择---</option>
+                            <option>理科第一批次</option>
+                            <option>理科第二批次</option>
+                            <option>理科第三批次</option>
+                            <option>文科第一批次</option>
+                            <option>文科第二批次</option>
+                            <option>文科第三批次</option>
+                        </select><br />
+
+                        <label for="birthPlace">籍&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;贯</label>
+                        <select id="birthPlace" name="city" style="width:100px;">
+                            <option selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浙江省  </option>
+                        </select><br />
+                        <label for="school">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;校</label>
+                        <input type="text" style="width:96px;" id=school name="school" value="" /><br />
+
+                        <label for="candidateNo">准考证号</label>
+                        <input type="text" id=candidateNo name="candidateNo" value="" /><br />
+                        <label for="telephone">联系电话</label>
+                        <input type="text" id=telephone name="telephone" value="" /><br />
+                        <label for="email">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱</label>
+                        <input type="text" id=email name="email" value="" /><br />
+                    </fieldset>
+                    <fieldset class="middleform">
+                        <label for="chinese">语文</label>
+                        <input type="text" id=chinese name="chinese" value="" />
+                        <label for="math">数学</label>
+                        <input type="text" id=math name="math" value="" />
+                        <label for="english">外语</label>
+                        <input type="text" id=english name="english" value="" /><br />
+                        <label for="science">理综</label>
+                        <input type="text" id=science name="science" value="" />
+                        <label for="artSumup">文综</label>
+                        <input type="text" id=artSumup name="artSumup" value="" /><br />
+                    </fieldset>
+                    <fieldset class="bottomform" >
+                        <label for="module">自选模块</label>
+                        <input type="text" id=module name="module" value="" />
+                        <label for="score">技术分</label>
+                        <input type="text" style="width:103px;" id =score name="score" value="" /><br />
+                        <label for="predictRank">预估名次</label>
+                        <input type="text" id=predictRank name="predictRank" value="" />
+                        <label for="exactRank">准确名次</label>
+                        <input type="text" id=exactRank name="exactRank" value="" /><br />
+                    </fieldset>
+                </form>
+                <div class="button">
+                    <ul>
+                        <li class="confirmInput">确认输入无误</li>
+                        <li class="startDesign">开始方案设计</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+      <div class="right">
+           <img src="images/pic3.jpg"/>
+      </div>
+
+  </div>
+</div>
+
+<div class="searchSchoolForm">
+    <label for="inputSchool">请输入院校名称：</label>
+    <input type="text" style="width:200px;" id=inputSchool name="inputSchool" value="" /><br />
+    <div class="button">
+        <div class="confirm">确定</div>
+        <div class="cancel">取消</div>
+    </div>
+</div>
+<div class="searchFieldForm">
+    <label for="inputField">请输入专业名称：</label>
+    <input type="text" style="width:200px;" id=inputField name="inputField" value="" /><br />
+    <label for="inputSchool2" class="inputSchool2">请输入院校名称：</label>
+    <input type="text" style="width:200px;margin-top: 10px;"class="inputSchool2" id=inputSchool2 name="inputSchool" value="" /><br />
+    <div class="button">
+        <div class="confirm">确定</div>
+        <div class="cancel">取消</div>
+    </div>
+</div>
+<div class="searchSchoolResultTable">
+    <table cellpadding="0" cellspacing="0">
+        <thead>
+            <tr>
+                <th rowspan=2 width="100px;" style="font-size: 20px;" class="head1">院校名称</th>
+                <th colspan=4>2012浙江省理科第一批分数线593分</th>
+                <th colspan=4>2012浙江省理科第一批分数线593分</th>
+                <th colspan=4>2012浙江省理科第一批分数线593分</th>
+                <th colspan=4>2012浙江省理科第一批分数线593分</th>
+                <th rowspan=2>2013年招生人数</th>
+                <th rowspan=2 width=100 >院校地址</th>
+            </tr>
+            <tr>
+                <th>投档线分</th>
+                <th>名次号</th>
+                <th>超省线分</th>
+                <th>招生人数</th>
+                <th>投档线分</th>
+                <th>名次号</th>
+                <th>超省线分</th>
+                <th>招生人数</th>
+                <th>投档线分</th>
+                <th>名次号</th>
+                <th>超省线分</th>
+                <th>招生人数</th>
+                <th>投档线分</th>
+                <th>名次号</th>
+                <th>超省线分</th>
+                <th>招生人数</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>浙江大学</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="searchFieldOfSchoolResultTable">
+    <table cellpadding="0" cellspacing="0">
+        <thead>
+            <tr>
+                <th>院校名称</th>
+                <th>专业名称</th>
+                <th>年份</th>
+                <th>招生人数</th>
+                <th>最高分</th>
+                <th>最高名次</th>
+                <th>最低分</th>
+                <th>最低名次</th>
+                <th>平均分</th>
+                <th>平均名次</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan=4>上海交通大学</td>
+                <td rowspan=4>法学</td>
+                <td>2009</td>
+                <td>3</td>
+                <td>657</td>
+                <td>559</td>
+                <td>654</td>
+                <td>679</td>
+                <td>655</td>
+                <td>635</td>
+            </tr>
+            <tr>
+                <td>2010</td>
+                <td>3</td>
+                <td>657</td>
+                <td>559</td>
+                <td>654</td>
+                <td>679</td>
+                <td>655</td>
+                <td>635</td>
+            </tr>
+            <tr>
+                <td>2011</td>
+                <td>3</td>
+                <td>657</td>
+                <td>559</td>
+                <td>654</td>
+                <td>679</td>
+                <td>655</td>
+                <td>635</td>
+            </tr>
+            <tr>
+                <td>2012</td>
+                <td>3</td>
+                <td>657</td>
+                <td>559</td>
+                <td>654</td>
+                <td>679</td>
+                <td>655</td>
+                <td>635</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* base css */
+html,body{ width:100%; height:100%;}
+html{color:#000;font-size: 12px; font-family:"Microsoft Yahei";}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,
+fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+a{text-decoration: none;outline: none;}
+li{ list-style:none;}
+.clr{clear:both; height:0; width:100%; font-size:1px; line-height:0px; visibility:hidden; overflow:hidden;}
+
+/* main css */
+.wrap{ height:auto; overflow:hidden;}
+.head{ height:30px; padding:5px 10px 0; background:#fff;}
+.headRight ul li{ float:left; padding: 3px 0; margin:2px 0; border-radius: 5px; padding: 2px 10px; display:inline; color:#000; font-size: 14px;}
+.headRight ul li:hover{ cursor: pointer;background: #9e9e9e;color: #fff;}
+.headRight ul li.hover{ cursor: pointer;background: #9e9e9e;color: #fff;}
+.headRight{ float:right;}
+.head ul li{
+    float: left;
+}
+.head ul li.logout{margin-left: 30px;}
+.headLeft{}
+.headLeft .info{ float:left; padding-left:20px; line-height:220%;}
+.headLeft .info span{ padding:0 5px;}
+.headLeft .info span.blue{ color:#3e80ff;}
+.headLeft .info span.red{ color:#eb0000;}
+.headLeft ul li{padding: 3px 0;}
+
+body{
+    min-width: 1020px;
+}
+.main{
+    height:auto;
+    overflow:hidden;
+    width: 100%;
+    /*min-width: 1020px;*/
+    background: url(../images/mainTopbg.jpg) top repeat-x #fff;
+}
+.contentTable{
+    margin: 0 auto;
+    margin-top: 100px;
+
+    width: 80%;
+    height: 80%;
+    min-width: 1000px;
+    max-width: 1200px;
+    /*border: 2px solid #d50000;*/
+}
+.contentTable table{
+    margin: 0 auto;
+    width:100%;
+    /*width:1000px;*/
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+}
+.contentTable .topTable,.bottomTable{
+    border-top: 1px #6a8a97 solid;
+    border-left: 1px #6a8a97 solid;
+}
+.contentTable .topTable td,.contentTable .topTable th, .bottomTable td, .bottomTable th, .contentTable .middleTable{
+    border-bottom: 1px #6a8a97 solid;
+    border-right: 1px #6a8a97 solid;
+}
+.middleTable{
+    border-left: 1px #6a8a97 solid;
+    border-right: 1px #6a8a97 solid;
+    font-size:14px;
+}
+.bottomTable{
+    text-align: center;
+}
+.confirmBtn{
+    font-size: 14px;
+    background: #e2e6f1;
+    width: 43px;
+    border: 1px #000 solid;
+    text-align: center;
+}
+.topTable, .middleTable, .bottomTable th{
+    background: #dae0f2;
+}
+.bottomTable td{
+    color: #656565;
+    font-weight: normal;
+}
+.bottomTable .rowEven{
+    background: #efefef;
+}
+.bottomBtn{
+    width:280px;
+    margin: 20px auto;
+}
+.bottomBtn div a:hover{
+    cursor: pointer;
+}
+.bottomBtn div{
+    background-color: #3975ea;
+    font-size: 26px;
+    color: #fff;
+    height:40px;
+    text-align: center;
+    border-radius: 5px;
+}
+.previous{
+    width: 140px;
+    float: left;
+}
+.download{
+    float: right;
+    width: 112px;
+}
+.field{
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+.field span{
+    color: #da1826;
+    font-size: 18px;
+}
+.obedience .check{
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+.check img{
+    width: 100%;
+    height: 100%;
+}
+.obedience{
+    width: 100%;
+}
+.obedience span{
+    float: right;
+}
+.bottomTable .batch{
+    color: #d50000;
+    font-size:16px;
+    font-weight: bold;
+    background: #e1e7f3;
+}
+.batch div{
+    width:18px;
+    text-align: center;
+    margin: 0 auto;
+}
+.contentTable .bottomTable{
+    margin-top: 2px;
+}

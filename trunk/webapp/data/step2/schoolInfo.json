@@ -1,0 +1,48 @@
+{
+    "schoolName": "浙江工业大学",
+    "type": "综合院校（本科）",
+    "belongto": "教育部",
+    "city": "北京",
+    "address": "北京北京北京北京",
+    "cellphone": "010-000000",
+    "website": "www.pku.edu.cn",
+    "is911":true,
+    "is285":true,
+    "hasGraduate":false,
+    "list":[
+        {
+            "name": "电子信息工程",
+            "renshu": "A/638",
+            "rank": "111111",
+            "type": 1
+        },
+        {
+            "name": "豆腐干豆腐干",
+            "renshu": "A/638",
+            "rank": "111111",
+            "type": 1
+        },
+        {
+            "name": "反对恢复",
+            "renshu": "A/638",
+            "rank": "111111",
+            "type": 1
+        },
+        {
+            "name": "过后突然",
+            "renshu": "A/638",
+            "rank": "111111",
+            "type": 1
+        },
+        {
+            "name": "身份识别",
+            "renshu": "A/638",
+            "rank": "111111",
+            "type": 1
+        }
+    ],
+    "detaillink":"www.baidu.com",
+    "rankarray":[23,45,-34,-93,-88],
+    "renshuarray":[11,21,31,41,45],
+    "yeararray":[2009,2010,2011,2023,2012]
+}

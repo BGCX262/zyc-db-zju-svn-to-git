@@ -1,0 +1,207 @@
+/*#menuLog { font-size:1.4em; margin:20px; }*/
+.hidden { position:absolute; top:0; left:-9999px; width:1px; height:1px; overflow:hidden; }
+
+.fg-button{
+    clear:left;
+    /*background: url(../images/bg2.jpg) repeat;*/
+    border-radius: 5px;
+    padding: 3px 10px;display:inline;
+    color:#000;
+    text-decoration:none !important;
+    cursor:pointer;
+    position: relative; text-align: center; zoom: 1;
+}
+.fg-button.focus{
+    background:url(../images/bg1.jpg) repeat;
+}
+.fg-button .ui-icon { position: absolute; top: 50%; margin-top: -8px; left: 50%; margin-left: -8px; }
+a.fg-button { float:left;  }
+button.fg-button { width:auto; overflow:visible; } /* removes extra button width in IE */
+
+.fg-button-icon-left { padding-left: 2.1em; }
+.fg-button-icon-right { padding-right: 2.1em; }
+.fg-button-icon-left .ui-icon { right: auto; left: .2em; margin-left: 0; }
+.fg-button-icon-right .ui-icon { left: auto; right: .2em; margin-left: 0; }
+.fg-button-icon-solo { display:block; width:8px; text-indent: -9999px; }	 /* solo icon buttons must have block properties for the text-indent to work */
+
+.fg-button.ui-state-loading .ui-icon { background: url(../images/spinner_bar.gif) no-repeat 0 0; }
+
+
+.searchSchoolForm ,.searchFieldForm, .savePlanWin{
+    position: absolute;
+    width:420px;
+    height: 95px;
+    top: 50%;
+    left:50%;
+    font-size: 20px;
+    display: none;
+    z-index: 110;
+    background: #fff;
+    padding: 20px 10px 0 10px;
+
+    border-radius: 8px;
+    -moz-box-shadow:0 0 10px #b7b5b5;
+    -webkit-box-shadow:0 0 15px #b7b5b5;
+    box-shadow:0 0 15px #000;
+}
+.savePlanWin{
+    height: 100px;
+    width: 450px;
+}
+
+.searchSchoolForm #inputSchool,.searchFieldForm #inputField,.searchFieldForm #inputSchool2,.savePlanWin #inputPlanName{
+    margin-left: 20px;
+}
+.searchSchoolForm .button, .searchFieldForm .button{
+    margin: 20px 120px;
+    float: right;
+}
+.savePlanWin .button{
+    margin: 20px 154px;
+    float: right;
+}
+.searchSchoolForm .button div, .searchFieldForm .button div, .savePlanWin .button div{
+    background-color: #10448c;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 5px;
+    width: 65px;
+    height: 24px;
+    border-radius: 5px;
+    float: left;
+}
+.searchSchoolForm .button .cancel, .searchFieldForm .button .cancel,.savePlanWin .button .cancel{
+    margin-left: 10px;
+}
+.searchSchoolForm .button div.hover, .searchFieldForm .button div.hover{
+    cursor: pointer;
+}
+.savePlanWin .button div:hover{
+    cursor: pointer;
+}
+
+.searchSchoolResultTable{
+    position: absolute;
+    width:840px;
+    height: auto;
+    font-size: 20px;
+    display: none;
+    z-index: 120;
+    background: #fff;
+    padding: 20px 10px 15px 10px;
+    max-height: 500px;
+    overflow-y: scroll;
+
+    border-radius: 8px;
+    -moz-box-shadow:0 0 10px #b7b5b5;
+    -webkit-box-shadow:0 0 15px #b7b5b5;
+    box-shadow:0 0 15px #000;
+}
+.searchSchoolResultTable table{
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+
+    border-top:1px #000 solid;
+    border-left: 1px #000 solid;
+}
+.searchSchoolResultTable table .left{
+    width: 60px;
+}
+.searchSchoolResultTable table th,.searchSchoolResultTable table td{
+    border-bottom:1px #000 solid;
+    border-right: 1px #000 solid;
+}
+.searchFieldOfSchoolResultTable{
+    position: absolute;
+    width:1000px;
+    height: auto;
+    font-size: 20px;
+    display: none;
+    z-index: 120;
+    background: #fff;
+    padding: 20px 10px 15px 10px;
+
+    border-radius: 8px;
+    -moz-box-shadow:0 0 10px #b7b5b5;
+    -webkit-box-shadow:0 0 15px #b7b5b5;
+    box-shadow:0 0 15px #000;
+}
+.searchFieldOfSchoolResultTable table {
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    width: 100%;
+    border-top:1px #000 solid;
+    border-left: 1px #000 solid;
+}
+.searchFieldOfSchoolResultTable table th,.searchFieldOfSchoolResultTable table td{
+    border-bottom:1px #000 solid;
+    border-right: 1px #000 solid;
+}
+.searchFieldOfSchoolResultTable table th{
+    font-size: 16px;
+}
+
+.fieldAllSchool{
+    position: absolute;
+    width:850px;
+    min-height: 200px;
+    top: 50%;
+    left:50%;
+    font-size: 14px;
+    display: none;
+    z-index: 130;
+    background: #fff;
+    padding: 20px 10px 0 10px;
+
+    border-radius: 8px;
+    -moz-box-shadow:0 0 10px #b7b5b5;
+    -webkit-box-shadow:0 0 15px #b7b5b5;
+    box-shadow:0 0 15px #000;
+    text-align: center;
+
+}
+.fieldAllSchool .returnBtn{
+    background: url(../images/bg2.jpg) repeat;
+    border-radius: 8px;
+    padding: 5px 15px;
+    display:inline;
+    color:#fff;
+    font-size: 18px;
+    width: 50px;
+    letter-spacing: 5px;
+    position: absolute;
+    left: 400px;
+    bottom: 20px;
+}
+.fieldAllSchool .returnBtn a:hover{
+    cursor: pointer;
+}
+.fieldAllSchool table{
+    width: 100%;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+}
+.fieldAllSchool table th{
+    font-size: 16px;
+}
+.fieldAllSchool table .tableleft{
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.fieldAllSchool table .tablemiddle{
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.fieldAllSchool table .tableright{
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-right: 2px solid #000;
+}
+.fieldAllSchool table .tableleftright{
+    border-right: 2px solid #000;
+    border-bottom: 1px solid #000;
+}

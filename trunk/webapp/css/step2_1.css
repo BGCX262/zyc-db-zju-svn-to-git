@@ -1,0 +1,489 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* base css */
+html,body{ width:100%; height:100%;}
+html{color:#000;font-size: 12px; font-family:"Microsoft Yahei";}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,
+fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+a{text-decoration: none;outline: none;}
+li{ list-style:none;}
+.clr{clear:both; height:0; width:100%; font-size:1px; line-height:0px; visibility:hidden; overflow:hidden;}
+
+/* main css */
+.wrap{ height:auto; }
+.head{ height:30px; padding:5px 10px 0; background:#fff;}
+.headRight ul li{ float:left; padding: 3px 0; margin:2px 0; border-radius: 5px; padding: 2px 10px; display:inline; color:#000; font-size: 14px;}
+.headRight ul li:hover{ cursor: pointer;background: #9e9e9e;color: #fff;}
+.headRight ul li.hover{ cursor: pointer;background: #9e9e9e;color: #fff;}
+.headRight{ float:right;}
+.head ul li{
+    float: left;
+}
+.head ul li.logout{margin-left: 30px;}
+.headLeft{}
+.headLeft .info{ float:left; padding-left:20px; line-height:220%;}
+.headLeft .info span{ padding:0 5px;}
+.headLeft .info span.blue{ color:#3e80ff;}
+.headLeft .info span.red{ color:#eb0000;}
+.headLeft ul li{padding: 3px 0;}
+
+body{
+    /*overflow: scroll;*/
+}
+.main{
+	width:100%;
+	height:100%;
+    /*overflow:hidden;*/
+    background: url(../images/topbg.jpg) top repeat-x #fff;
+    padding-top: 20px;
+}
+
+.main .content{
+    width: 1230px;
+    margin: 0 auto;
+    height: 700px;
+
+    /*border: 1px #b7b5b5 solid;*/
+    /*border-radius: 5px;*/
+    /*-moz-box-shadow:0 0 10px #b7b5b5;*/
+    /*-webkit-box-shadow:0 0 10px #b7b5b5;*/
+    /*box-shadow:0 0 10px #b7b5b5;*/
+}
+
+.main .title{
+    font-size: 36px;
+    letter-spacing: 10px;
+    color: #286edb;
+    text-align: center;
+    height: 55px;
+}
+
+.mainLeft, .mainRight{
+    float: left;
+    /*width: 49.8%;*/
+
+    /*border: 1px #b7b5b5 solid;*/
+    /*border-radius: 5px;*/
+    /*-moz-box-shadow:0 0 10px #b7b5b5;*/
+    /*-webkit-box-shadow:0 0 10px #b7b5b5;*/
+    /*box-shadow:0 0 10px #b7b5b5;*/
+}
+.mainRight{
+    width:49%;
+    float: right;
+    height: 90%;
+}
+.mainLeft{
+    width: 51%;
+    height: 98%;
+}
+.mainLeft .content, .mainRight .content{
+    width: 96%;
+    height: 90%;
+    padding: 10px 10px;
+    border: 1px #b7b5b5 solid;
+    border-radius: 5px;
+    -moz-box-shadow:0 0 10px #b7b5b5;
+    -webkit-box-shadow:0 0 10px #b7b5b5;
+    box-shadow:0 0 10px #b7b5b5;
+}
+
+.mainLeft .leftContent{
+    width: 240px;
+    border: 1px #b7b5b5 solid;
+    border-radius: 5px;
+    -moz-box-shadow:0 0 10px #b7b5b5;
+    -webkit-box-shadow:0 0 10px #b7b5b5;
+    box-shadow:0 0 10px #b7b5b5;
+    text-align: center;
+    float: left;
+    height: 100%;
+}
+
+.mainLeft .schoolName{
+    font-size: 20px;
+    margin: 20px auto;
+    color: #000;
+    letter-spacing: 5px;
+}
+
+.mainLeft .schoolInfo{
+    margin: 10px 10px;
+}
+.mainLeft .schoolInfo table {
+    text-align: left;
+}
+
+.mainLeft .schoolInfo table td.left{
+    font-size: 10px;
+    color: #ff8226;
+    width: 36px;
+}
+
+.mainLeft .schoolInfo table td.right{
+    font-size: 10px;
+    color: #6a95ea;
+    padding-left: 5px;
+    width: 144px;
+}
+.mainLeft .schoolDetail{
+    margin: 25px 10px;
+
+    font-size: 14px;
+    background: #dcdcdc;
+    padding: 5px 10px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: underline;
+}
+.mainLeft .schoolChart .chartTitle{
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+.mainLeft .schoolDataTable table{
+    margin: 20px auto;
+    border-top: 1px #000 solid;
+    border-left: 1px #000 solid;
+    width: 96%;
+}
+.mainLeft .schoolDataTable table th,.mainLeft .schoolDataTable table td {
+    border-bottom: 1px #000 solid;
+    border-right: 1px #000 solid;
+}
+.mainLeft .rightContent{
+    float: right;
+}
+.addSchoolBtn:hover{
+    cursor: pointer;
+}
+.addSchoolBtn{
+    font-size: 12px;
+    color:#fff;
+    background: #3975ea;
+    border-radius: 8px;
+    padding: 6px 0;
+    letter-spacing: 2px;
+    width:100px;
+    margin-left: 10px;
+    text-align: center;
+}
+.schoolTable table{
+    width: 360px;
+    text-align: center;
+}
+.schoolTable table tbody tr.hover,.fieldTable table tbody tr.hover{
+    background: #d3d3d3;
+    border-left: #d3d3d3 solid 1px;
+    border-right: #d3d3d3 solid 1px;
+}
+.schoolTable table tbody tr.clicked,.fieldTable table tbody tr.clicked{
+    background: #d3d3d3;
+    border-left: #d3d3d3 solid 1px;
+    border-right: #d3d3d3 solid 1px;
+}
+.fieldTable table tbody tr{
+    margin: 10px 0 ;
+}
+.mainRight{
+    margin: 0 auto;
+}
+.mainRight .topContent{
+    font-size: 26px;
+    color: #000;
+    letter-spacing: 15px;
+    text-align: center;
+}
+
+.mainRight .leftBottom{
+    float: left;
+    width: 318px;
+    padding-left: 2px;
+    border: 1px #b7b5b5 solid;
+    border-radius: 5px;
+    -moz-box-shadow:0 0 10px #b7b5b5;
+    -webkit-box-shadow:0 0 10px #b7b5b5;
+    box-shadow:0 0 10px #b7b5b5;
+    height: 100%;
+}
+.mainRight .rightBottom{
+    float: right;
+    width: 250px;
+    height: 100%;
+    border: 1px #b7b5b5 solid;
+    border-radius: 5px;
+    -moz-box-shadow:0 0 10px #b7b5b5;
+    -webkit-box-shadow:0 0 10px #b7b5b5;
+    box-shadow:0 0 10px #b7b5b5;
+}
+.mainRight .colorBtn{
+    float: left;
+    font-size: 14px;
+}
+.mainRight .colorBtn div{
+    float: left;
+    border-radius: 3px;
+}
+
+.colorBtn div{
+    color: #fff;
+}
+.colorBtn div.hovered{
+    color: #000;
+}
+.colorBtn .risk{
+    background-color:#f20000;
+    float: left;
+    margin: 0 5px 0 5px;
+    padding: 0 5px;
+}
+.colorBtn .stable{
+    background-color:#33e845;
+    float: left;
+    margin: 0 5px 0 5px;
+    padding: 0 5px;
+}
+.colorBtn .rush{
+    margin: 0 5px 0 5px;
+    background-color:#fca30a;
+    float: left;
+    padding: 0 5px;
+}
+.rankBtn{
+    float: right;
+    background: url(../images/bgrank.gif) repeat;
+    border-radius: 8px;
+    padding: 2px 5px;
+    width:180px;
+    margin-left: 20px;
+    display:inline;
+    /*width:55%;*/
+    color:#7a7a7a;
+    text-align:center;
+}
+.rankBtn div.hovered{
+    color: blue;
+}
+.rankBtn div{
+    float: left;
+}
+.rankBtn div a:hover, .tableBtn .colorBtn a:hover{
+    cursor: pointer;
+}
+.rightBottom .chartTitle{
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.rightBottom .fieldTitle{
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.fieldTable{
+    /*width: 90%;*/
+}
+.fieldDataTable table{
+    margin: 0 auto;
+    border-top: 1px #000 solid;
+    border-left: 1px #000 solid;
+    width: 96%;
+}
+.fieldDataTable table th, .fieldDataTable table td {
+    border-bottom: 1px #000 solid;
+    border-right: 1px #000 solid;
+}
+.selectedFields {
+    margin-top: 20px;
+}
+.selectedFields .top{
+    margin-top:10px;
+}
+.selectedFields .detailBtn{
+    float: right;
+    font-size: 10px;
+    background-color: #e4e3e3;
+    border-radius: 5px;
+    color:#5d5d5d;
+    padding:3px 5px;
+    margin-right: 10px;
+}
+.selectedFields .detailBtn:hover{
+    cursor: pointer;
+}
+.selectedFields .selectedCount{
+    color:#3e80ff;
+    font-size: 14px;
+    float: left;
+    margin-left: 30px;
+}
+.selectedList{
+    /*overflow-y: scroll;*/
+    /*height: 185px;*/
+}
+.selectedList .field{
+    /*float: left;*/
+    width:220px;
+    margin: 5px 0;
+}
+.stepBtn{
+    width: 200px;
+    margin: 10px auto;
+}
+.stepBtn div a:hover{
+    cursor: pointer;
+}
+.stepBtn div{
+    background: url(../images/bg2.jpg) repeat;
+    border-radius: 8px;
+    padding: 5px 15px;
+    display:inline;
+    color:#fff;
+    font-size: 18px;
+    width: 63px;
+}
+.previousBtn{
+    float: left;
+}
+.nextBtn{
+    float: right;
+}
+.remove img{
+    width: 16px;
+    height:16px;
+}
+.remove img:hover,.checkbox img:hover{
+    cursor: pointer;
+}
+.checkbox img{
+    width: 18px;
+    height: 18px;
+}
+.fieldTableBodyWap{
+    height:444px;
+    /*overflow-y: scroll;*/
+}
+.fieldTable table, .schoolTable table{
+   font-size: 14px;
+}
+
+.fieldTable table tr,.schoolTable table tr{
+    margin: 5px 0;
+    line-height: 30px;
+}
+
+.selectedList .field{
+    margin: 5px 5px;
+}
+.selectedList .field .remove{
+    margin-left: 5px;
+}
+.bottomContent{
+    height: 93%;
+}
+.tableBtn{
+    margin: 5px 0;
+}
+
+.fieldsCompared{
+    position: absolute;
+    width:850px;
+    height: auto;
+    /*min-height: 200px;*/
+    top: 50%;
+    left:50%;
+    font-size: 14px;
+    display: none;
+    z-index: 130;
+    background: #fff;
+    padding: 20px 10px 0 10px;
+
+    /*max-height: 500px;*/
+    /*overflow-y: scroll;*/
+
+    border-radius: 8px;
+    -moz-box-shadow:0 0 10px #b7b5b5;
+    -webkit-box-shadow:0 0 15px #b7b5b5;
+    box-shadow:0 0 15px #000;
+    text-align: center;
+
+}
+.fieldsCompared .returnBtn{
+    background: url(../images/bg2.jpg) repeat;
+    border-radius: 8px;
+    padding: 5px 15px;
+    display:inline;
+    color:#fff;
+    font-size: 18px;
+    width: 50px;
+    letter-spacing: 5px;
+    position: absolute;
+    left: 400px;
+    bottom: 20px;
+}
+.fieldsCompared .returnBtn a:hover{
+    cursor: pointer;
+}
+.fieldsCompared table{
+    width: 100%;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+}
+.fieldsCompared table th{
+    font-size: 16px;
+}
+.fieldsCompared table .leftleft{
+    border-bottom: 1px solid #000;
+}
+.fieldsCompared table .remove:hover{
+    cursor: pointer;
+}
+.fieldsCompared table .left{
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.fieldsCompared table .middle{
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.fieldsCompared table .right{
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-right: 2px solid #000;
+}
+.fieldsCompared table .leftright{
+    border-right: 2px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.tableTitle{
+    margin: 20px 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+.tableTitle span{
+    width: 30%;
+    float: left;
+}
+.schoolType div{
+    display: none;
+    float: left;
+    border: 1px solid #e1e7f3;
+    color: #ff8226;
+    background: #edeced;
+    border-radius: 5px;
+    margin-left: 5px;
+    text-align: center;
+    padding: 0 5px;
+}
+.colorBtn .fieldName{
+    color: #000;
+}

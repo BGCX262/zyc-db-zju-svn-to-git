@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* base css */
+html,body{ width:100%; height:100%;}
+html{color:#000;font-size: 12px; font-family:"Microsoft Yahei"; background:#eaeaea;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,
+fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+a{text-decoration: none;outline: none;}
+li{ list-style:none;}
+.clr{clear:both; height:0; width:100%; font-size:1px; line-height:0px; visibility:hidden; overflow:hidden;}
+
+/* main css */
+.wrap{ height:auto; overflow:hidden;}
+.head{ height:30px; padding:5px 10px 0; background:#fff;}
+.headRight ul li{ float:left; padding: 3px 0; margin:2px 0; border-radius: 5px; padding: 2px 10px; display:inline; color:#000; font-size: 14px;}
+.headRight ul li.hover{ cursor: pointer;background: #9e9e9e;color: #fff;}
+.headRight{ float:right;}
+.head ul li{
+    float: left;
+}
+.head ul li.logout{margin-left: 30px;}
+.headLeft{}
+.headLeft .info{ float:left; padding-left:20px; line-height:220%;}
+.headLeft .info span{ padding:0 5px;}
+.headLeft .info span.blue{ color:#3e80ff;}
+.headLeft .info span.red{ color:#eb0000;}
+.headLeft ul li{padding: 3px 0;}
+
+.main{ height:auto; overflow:hidden; background: #fff url(../images/bg4.jpg) top repeat-x; padding:60px 10px;}
+.main .left{float: left;width:50%; margin-top:-20px;}
+.main .left .title{text-align: center; font-size: 34px;margin-bottom: 20px;}
+.main .left .form{float: left; margin-left: 100px;}
+.main .left .form form fieldset{border: none; margin-bottom: 30px;}
+.main .left .form form fieldset input{ margin: 5px 0 5px 0;}
+.main .left .form form .middleform input{ width: 70px;}
+.main .left .form form .bottomform input{ width: 90px;}
+.main .left .button ul li{ background: url(../images/bg2.jpg) repeat; border-radius: 5px;  padding: 5px 15px; display:inline; color:#fff; font-weight:bold; font-size: 16px;}
+.main .left .button ul li.hover{cursor:pointer;}
+.main .left .form form label{font-size: 16px;}
+.main .left .button .startDesign{background-image:none; background-color: #838383; margin: 0 0 0 60px;}
+.main .left .button .startDesign.enable{background: url(../images/bg2.jpg) repeat;}
+
+.main .right{ float:right; width:50%; height:70%;}
+.main .right img{ width:100%; height:100%;}
